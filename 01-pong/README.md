@@ -1,4 +1,4 @@
-# 01 - Game Name
+# 01 - Pong
 
 Recreation of classic Pong
 
@@ -11,11 +11,11 @@ Recreation of classic Pong
 |--------|-------|
 | Move | Arrow keys |
 
-## Goal
+## Goal of the game
 
 Score 10 points first to win.
 
-## Features
+## Development Goals
 
 - [x] Create an arena with two walls and a divider.
 
@@ -26,6 +26,14 @@ Score 10 points first to win.
 - [ ] Detect when the ball leaves the playfield. Assign a point to the player who scored.
 
 - [ ] Track and display the score for each player.
+## Stretch Development Goals
+
+- [ ] Write an AI script that can follow the ball so you can play with only one player.
+
+- [ ] Add a menu and allow the player to reset the game.
+
+- [ ] Add some basic sounds. Play a sound every time the ball collides with something, and every time a player scores.
+
 ## Reflection
 
 **What went well**
@@ -40,8 +48,13 @@ Score 10 points first to win.
 **New things I learned**
 -
 
+- Detecting collision without using Unity's rigidbody & colliders - Use AABB method for rectangular bounding box collisions.
+- Canvas Scaler can make UI elements scale with screen size.
+
 ## Credits
 
-- Art:
-- Audio:
-- Tutorials / references:
+  - Art
+    - Font: https://www.mattlag.com/bitfonts/
+
+   - Audio: Made by me
+- Tutorials / references: Original "Pong(1972)" by Atari
