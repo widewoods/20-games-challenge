@@ -52,6 +52,7 @@ Score 10 points first to win.
 -
 
 - Spend more time learning about how game engine does collision detections
+
 **New things I learned**
 -
 
