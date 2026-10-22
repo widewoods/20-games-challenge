@@ -651,7 +651,7 @@ Transform:
   m_GameObject: {fileID: 934404059}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.97, y: -2.69, z: 0}
+  m_LocalPosition: {x: -4.4, y: 0.17, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe8d1cddab3a42dfa5efd8242481123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallMovement
-  moveSpeed: 7
+  baseMoveSpeed: 4
   topWall: {fileID: 560827238}
   bottomWall: {fileID: 438058758}
   leftPaddle: {fileID: 1712516343}
@@ -761,7 +761,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -778,7 +778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1a56b12d955449ca6fe890154927c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPaddleMovement
-  moveSpeed: 5
+  playerNumber: 0
+  moveSpeed: 7
 --- !u!1 &1414038929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,7 +1138,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1154,6 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1a56b12d955449ca6fe890154927c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPaddleMovement
+  playerNumber: 1
   moveSpeed: 7
 --- !u!1 &1766675187
 GameObject:
@@ -1401,7 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   ARENA_BOUNDARY_X: 9
-  winScore: 3
+  winScore: 10
   ball: {fileID: 934404061}
   leftScoreText: {fileID: 353152062}
   rightScoreText: {fileID: 1766675189}

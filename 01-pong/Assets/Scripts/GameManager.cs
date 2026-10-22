@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI rightScoreText;
     [SerializeField] private Transform leftSpawnPoint;
     [SerializeField] private Transform rightSpawnPoint;
+
+    public static Action OnBallRespawn;
 
 
     private int leftScore = 0;
@@ -59,6 +62,7 @@ public class GameManager : MonoBehaviour
     void RespawnBall(int lastScorer)
     {
         ball.position = lastScorer == 0 ? rightSpawnPoint.position : leftSpawnPoint.position;
+        OnBallRespawn?.Invoke();
     }
 
     void HandleWin(int player)

@@ -3,23 +3,43 @@ using UnityEngine.InputSystem;
 
 public class PlayerPaddleMovement : MonoBehaviour
 {
+    [SerializeField] private int playerNumber;
     [SerializeField] private float moveSpeed;
     float boundary = 5 - 0.125f - 0.5f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.upArrowKey.isPressed)
-        {
-            transform.Translate(moveSpeed * Time.deltaTime * transform.up);
-        }
-
-        else if (Keyboard.current.downArrowKey.isPressed)
-        {
-            transform.Translate(-1 * moveSpeed * Time.deltaTime * transform.up);
-        }
-
+        MovePlayer();
         ClampPosition();
+    }
+
+    void MovePlayer()
+    {
+        if (playerNumber == 0)
+        {
+            if (Keyboard.current.upArrowKey.isPressed)
+            {
+                transform.Translate(moveSpeed * Time.deltaTime * transform.up);
+            }
+
+            else if (Keyboard.current.downArrowKey.isPressed)
+            {
+                transform.Translate(-1 * moveSpeed * Time.deltaTime * transform.up);
+            }
+        }
+        else
+        {
+            if (Keyboard.current.wKey.isPressed)
+            {
+                transform.Translate(moveSpeed * Time.deltaTime * transform.up);
+            }
+
+            else if (Keyboard.current.sKey.isPressed)
+            {
+                transform.Translate(-1 * moveSpeed * Time.deltaTime * transform.up);
+            }
+        }
     }
 
     private void ClampPosition()
@@ -28,5 +48,4 @@ public class PlayerPaddleMovement : MonoBehaviour
         clampedPos.y = Mathf.Clamp(clampedPos.y, -boundary, boundary);
         transform.position = clampedPos;
     }
-
 }
