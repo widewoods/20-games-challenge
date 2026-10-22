@@ -2,13 +2,13 @@
 
 My attempt at the [20 Games Challenge](https://20_games_challenge.gitlab.io/): making 20 small games, one at a time, and keeping every project in this repo.
 
-**Progress: 0 / 20**
+**Progress: 1 / 20**
 
 ## Games
 
 | #  | Game | Engine | Playable | Started | Finished |
 |----|------|--------|----------|---------|----------|
-| 01 | [Pong](01-pong) | Unity | [itch.io](#) | 2026-10-19 | YYYY-MM-DD |
+| 01 | [Pong](01-pong) | Unity | [itch.io](https://widewoods.itch.io/20-games-challenge01-pong) | 2026-10-19 | 2026-10-22 |
 | 02 |  |  |  |  |  |
 | 03 |  |  |  |  |  |
 | 04 |  |  |  |  |  |
@@ -52,12 +52,3 @@ Each game is a self-contained engine project in its own numbered folder, with it
 
 - Commit messages are prefixed with the game, e.g. `pong: add scoring`.
 - Builds are not committed; they live on itch.io or GitHub Releases.
-
-## Log
-
-Short notes on what I learned from each game.
-
-### 01 - Name
-- What went well:
-- What was hard:
-- What I'd do differently:

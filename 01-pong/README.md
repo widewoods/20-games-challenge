@@ -3,7 +3,7 @@
 Recreation of classic Pong
 
 
-**Play it:** [itch.io](#) | **Engine:** Unity 6 (6000.3.9f1) | **Time spent:** ~6 hours
+**Play it:** [itch.io](https://widewoods.itch.io/20-games-challenge01-pong) | **Engine:** Unity 6 (6000.3.9f1) | **Time spent:** ~6 hours
 
 ## Controls
 
