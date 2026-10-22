@@ -21,6 +21,8 @@ public class BallMovement : MonoBehaviour
     private float topWallMinY;
     private float bottomWallMaxY;
 
+    public static Action OnBallCollision;
+
     void Start()
     {
         moveSpeed = baseMoveSpeed;
@@ -60,6 +62,7 @@ public class BallMovement : MonoBehaviour
             transform.position = clampedPos;
 
             velocity.y = -velocity.y;
+            OnBallCollision?.Invoke();
         }
 
         //Check collision with bottom wall
@@ -70,6 +73,7 @@ public class BallMovement : MonoBehaviour
             transform.position = clampedPos;
 
             velocity.y = -velocity.y;
+            OnBallCollision?.Invoke();
         }
     }
 
@@ -94,6 +98,7 @@ public class BallMovement : MonoBehaviour
             velocity = reflectVelocity.normalized;
 
             moveSpeed += 0.5f;
+            OnBallCollision?.Invoke();
         }
 
         //Check collision with right paddle
@@ -110,6 +115,7 @@ public class BallMovement : MonoBehaviour
             velocity = reflectVelocity.normalized;
 
             moveSpeed += 0.5f;
+            OnBallCollision?.Invoke();
         }
     }
 
