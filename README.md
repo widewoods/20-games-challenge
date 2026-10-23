@@ -9,7 +9,7 @@ My attempt at the [20 Games Challenge](https://20_games_challenge.gitlab.io/): m
 | #  | Game | Engine | Playable | Started | Finished |
 |----|------|--------|----------|---------|----------|
 | 01 | [Pong](01-pong) | Unity | [itch.io](https://widewoods.itch.io/20-games-challenge01-pong) | 2026-10-19 | 2026-10-22 |
-| 02 |  |  |  |  |  |
+| 02 | [Breakout](02-breakout) | Unity | [itch.io](#) | 2026-10-23 | YYYY-MM-DD |
 | 03 |  |  |  |  |  |
 | 04 |  |  |  |  |  |
 | 05 |  |  |  |  |  |

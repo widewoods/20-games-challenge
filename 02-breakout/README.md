@@ -1,0 +1,48 @@
+# 01 - Breakout
+
+Recreation of Breakout
+
+
+**Play it:** [itch.io](#) | **Engine:** Unity 6 (6000.3.9f1) | **Time spent:** ~X hours
+
+## Controls
+
+
+## Goal of the game
+
+
+## Development Goals
+
+- [ ] Create a game space with walls and a ceiling.
+- [ ] Add a paddle that can be moved left and right via player inputs.
+- [ ] Add a ball that will bounce off of the paddle, walls, and ceiling.
+- [ ] Add square game objects (bricks) into the top of the game space.
+(The original game had eight rows of 16 bricks each, though you can change the number of bricks depending on the size of the game space)
+- [ ] Enable the ball to bounce off of the bricks. When the ball bounces, the brick should disappear.
+    - [ ] Breaking a brick should add to the player’s score.
+    - [ ] The ball’s speed should increase as bricks are broken.
+- [ ] The score should be displayed, as well as a life counter. The player starts with three lives. If the player misses the ball, a life should be subtracted. When all lives are used, the game ends.
+## Stretch Development Goals
+
+- [ ] Save the high score between play sessions and display it alongside the player score.
+- [ ] Add different colors to the bricks in the rows. (The original game was black-and-white, but had a colored film on the screen, simulating colored rows of bricks)
+- [ ] The paddle should get narrower once the ball reaches the ceiling.
+
+## Reflection
+
+**What went well**
+-
+
+
+**What was hard**
+-
+
+
+**What I'd do differently**
+-
+
+**New things I learned**
+-
+
+## Credits
+  
