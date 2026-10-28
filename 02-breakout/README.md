@@ -13,8 +13,8 @@ Recreation of Breakout
 
 ## Development Goals
 
-- [ ] Create a game space with walls and a ceiling.
-- [ ] Add a paddle that can be moved left and right via player inputs.
+- [x] Create a game space with walls and a ceiling.
+- [x] Add a paddle that can be moved left and right via player inputs.
 - [ ] Add a ball that will bounce off of the paddle, walls, and ceiling.
 - [ ] Add square game objects (bricks) into the top of the game space.
 (The original game had eight rows of 16 bricks each, though you can change the number of bricks depending on the size of the game space)
